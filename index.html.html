@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sostenibilidad Humana</title>
+
+  <style>
+    :root {
+      --fondo: #f4f1ea;
+      --texto: #1f1f1f;
+      --gris: #6f6f6f;
+      --linea: #d8d2c8;
+      --boton: #1f1f1f;
+      --boton-texto: #ffffff;
+      --boton-hover: #3a3a3a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+    }
+
+    .marca {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gris);
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4.8rem);
+      font-weight: 400;
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin-bottom: 28px;
+    }
+
+    .subtitulo {
+      max-width: 560px;
+      margin: 0 auto 42px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--gris);
+    }
+
+    .imagen {
+      width: 100%;
+      max-width: 620px;
+      margin: 0 auto 42px;
+      border-radius: 2px;
+      overflow: hidden;
+      border: 1px solid var(--linea);
+      background: #e8e4dc;
+    }
+
+    .imagen img {
+      width: 100%;
+      display: block;
+    }
+
+    .acciones {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 210px;
+      padding: 15px 24px;
+      border-radius: 999px;
+      background: var(--boton);
+      color: var(--boton-texto);
+      text-decoration: none;
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .boton:hover {
+      background: var(--boton-hover);
+      transform: translateY(-2px);
+    }
+
+    .boton.secundario {
+      background: transparent;
+      color: var(--texto);
+      border: 1px solid var(--texto);
+    }
+
+    .boton.secundario:hover {
+      background: var(--texto);
+      color: #ffffff;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 520px;
+      margin: 10px auto 0;
+      display: block;
+    }
+
+    .pie {
+      margin-top: 42px;
+      padding-top: 24px;
+      border-top: 1px solid var(--linea);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gris);
+    }
+
+    @media (max-width: 560px) {
+      body {
+        padding: 28px 16px;
+      }
+
+      .acciones {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .boton {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="contenedor">
+
+    <div class="marca">Sostenibilidad Humana</div>
+
+    <h1>El planeta<br>son las personas</h1>
+
+    <p class="subtitulo">
+      Una propuesta para impulsar una nueva cultura de innovación, cuidado,
+      inclusión y responsabilidad humana desde organizaciones ejemplares.
+    </p>
+
+    <section class="imagen">
+      <img src="ilustracion-cordial-sostenibilidad-humana.jpeg" alt="Imagen representativa de Sostenibilidad Humana">
+    </section>
+
+    <div class="acciones">
+      <a class="boton" href="#audio">Escuchar resumen</a>
+
+      <a class="boton secundario" 
+         href="sostenibilidad-humana-2026.pdf" 
+         download>
+        Descargar Proyecto
+      </a>
+    </div>
+
+    <section id="audio">
+      <audio controls>
+        <source src="audio-sostenibilidad-humana-2026.mp3" type="audio/mpeg">
+        Tu navegador no permite reproducir este audio.
+      </audio>
+    </section>
+
+    <div class="pie">
+      Nodo de Segovia · Sostenibilidad Humana <br>
+Drylock & Paladio Arte
+    </div>
+
+  </main>
+
+</body>
+</html>
